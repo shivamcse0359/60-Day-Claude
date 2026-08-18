@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 210mm; height: 297mm;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1f2937;
+    background: #ffffff;
+    padding: 10mm 13mm;
+  }
+  .icon {
+    display:inline-block; width:5.5mm; height:5.5mm; border-radius:50%;
+    background:#0f172a; color:#fde68a; text-align:center; line-height:5.5mm;
+    font-size:8pt; font-weight:700; margin-right:1.5mm; font-style:normal;
+  }
+  .box .icon, .actions .icon { background:#0f172a; color:#fde68a; }
+  .header {
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom: 2.5px solid #0f172a;
+    padding-bottom: 3.5mm; margin-bottom: 4mm;
+  }
+  .header h1 { font-size: 21pt; color:#0f172a; letter-spacing:0.3px; }
+  .header .sub { font-size: 9pt; color:#64748b; margin-top: 1.5mm; }
+  .badge {
+    background:#0f172a; color:#f8fafc; font-size:8pt; font-weight:600;
+    padding: 2mm 4mm; border-radius:2px; text-align:center; line-height:1.5;
+  }
+  .badge span { display:block; font-size:7pt; color:#cbd5e1; font-weight:400; }
+
+  .top-grid { display:flex; gap:6mm; margin-bottom:3.5mm; }
+  .box {
+    flex:1; border:1px solid #e2e8f0; border-radius:3px; padding:4mm 5mm;
+    background:#f8fafc;
+  }
+  .box h2 { font-size:10.5pt; color:#0f172a; margin-bottom:2mm; display:flex; align-items:center; }
+  .box p, .box li { font-size:8.8pt; color:#334155; line-height:1.55; }
+  .box ul { padding-left: 3.5mm; }
+
+  .section-title {
+    font-size: 11.5pt; color:#0f172a; font-weight:700;
+    margin: 3.2mm 0 2mm 0; padding-bottom:1.5mm;
+    border-bottom: 1px solid #cbd5e1;
+    display:flex; align-items:center;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:8.4pt; }
+  th {
+    background:#0f172a; color:#f8fafc; text-align:left;
+    padding: 1.6mm 3mm; font-weight:600; font-size:8.4pt;
+  }
+  td { padding: 1.6mm 3mm; border-bottom:1px solid #e2e8f0; color:#334155; vertical-align:top; }
+  tr:nth-child(even) td { background:#f8fafc; }
+
+  .two-col { display:flex; gap:5mm; }
+  .two-col .col { flex:1; }
+
+  .proj-grid { display:flex; gap:4mm; }
+  .proj-card {
+    flex:1; border:1px solid #e2e8f0; border-radius:3px; padding:3.5mm 4mm;
+    background:#f8fafc;
+  }
+  .proj-card h3 { font-size:9pt; color:#0f172a; margin-bottom:1.5mm; }
+  .proj-card p { font-size:8pt; color:#475569; line-height:1.5; }
+
+  .net-box { border:1px solid #e2e8f0; border-radius:3px; padding:3.5mm 4mm; background:#f8fafc; }
+
+  .milestone-row { display:flex; gap:3mm; margin-top:2mm; }
+  .m-card {
+    flex:1; border:1px solid #e2e8f0; border-radius:3px; padding:2.5mm 1.5mm;
+    background:#ffffff; text-align:center;
+  }
+  .m-card .m-label { font-size:7.5pt; font-weight:700; color:#ffffff; background:#0f172a; border-radius:2px; padding:1mm 0; margin-bottom:1.8mm; }
+  .m-card p { font-size:7.3pt; color:#334155; line-height:1.35; }
+
+  .actions {
+    background:#0f172a; color:#f8fafc; border-radius:4px; padding:3mm 5mm; margin-top:3mm;
+  }
+  .actions h2 { font-size:10pt; margin-bottom:1.5mm; color:#fde68a; display:flex; align-items:center; }
+  .actions ol { padding-left:4.5mm; }
+  .actions li { font-size:8.2pt; line-height:1.5; }
+
+  .footer {
+    text-align:center; margin-top:2.5mm; font-size:7pt; color:#94a3b8; font-style:italic;
+  }
+  .divider { height:1px; background:#e2e8f0; margin: 2.5mm 0; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <h1>AI-Era Career Roadmap</h1>
+      <div class="sub">Personalized 6-Month Strategy — Prepared for a Student targeting First Job Placement</div>
+    </div>
+    <div class="badge">6-MONTH PLAN<span>Student → Employed</span></div>
+  </div>
+
+  <div class="top-grid">
+    <div class="box">
+      <h2><span class="icon">C</span>Current Position</h2>
+      <p>Student with practical foundation in <b>Design, Sales &amp; Marketing</b>. No formal full-time work experience yet — strong raw skill set, needs structured portfolio, applied projects, and job-search positioning.</p>
+    </div>
+    <div class="box">
+      <h2><span class="icon">T</span>Target Goal</h2>
+      <p>Land a full-time job in <b>6 months</b> — target roles: Marketing Associate, Digital Marketing Executive, Brand/Design Coordinator, or Growth Marketing Trainee, positioned with an <b>AI-augmented skill edge</b>.</p>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">G</span>Skill Gap Analysis</div>
+  <table>
+    <tr><th>Category</th><th>You Have</th><th>Gap to Close</th><th>Priority</th></tr>
+    <tr><td>Core Craft</td><td>Design, Sales, Marketing fundamentals</td><td>Applied portfolio proof (real/simulated projects)</td><td>High</td></tr>
+    <tr><td>Tools</td><td>Basic design/marketing tool exposure</td><td>Canva/Figma proficiency, Meta Ads Manager, Google Analytics, HubSpot/CRM</td><td>High</td></tr>
+    <tr><td>AI Fluency</td><td>General AI awareness</td><td>Prompt engineering, AI copywriting, AI image tools, ChatGPT/Claude workflows for marketing</td><td>High</td></tr>
+    <tr><td>Data</td><td>Minimal</td><td>Excel/Sheets, basic analytics reading, A/B test literacy</td><td>Medium</td></tr>
+    <tr><td>Job-Readiness</td><td>None formal</td><td>Resume, LinkedIn profile, portfolio site, interview practice</td><td>High</td></tr>
+  </table>
+
+  <div class="section-title"><span class="icon">L</span>Recommended Learning Plan</div>
+  <table>
+    <tr><th>Phase</th><th>Focus</th><th>Key Skills / Resources</th></tr>
+    <tr><td>Month 1</td><td>Foundations + AI Tools</td><td>Canva/Figma basics, ChatGPT/Claude for content &amp; prompts, Google Digital Marketing cert (free)</td></tr>
+    <tr><td>Month 2</td><td>Marketing Execution</td><td>Meta Ads Manager, Google Analytics, email marketing (Mailchimp), copywriting frameworks (AIDA/PAS)</td></tr>
+    <tr><td>Month 3</td><td>Sales + CRM</td><td>HubSpot CRM certification, cold outreach scripts, sales funnel basics</td></tr>
+    <tr><td>Month 4</td><td>Portfolio Building</td><td>Build 3 case studies (see projects below), publish on LinkedIn/portfolio site</td></tr>
+    <tr><td>Month 5</td><td>Job Application Engine</td><td>Resume + LinkedIn optimization, 20 tailored applications/week, mock interviews</td></tr>
+    <tr><td>Month 6</td><td>Interview + Close</td><td>Case interview practice, salary negotiation basics, referrals push</td></tr>
+  </table>
+
+  <div class="section-title"><span class="icon">P</span>Suggested Portfolio Projects</div>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <h3>1. Brand Launch Kit</h3>
+      <p>Design a full brand identity (logo, social kit, one-pager) for a fictional or local small business using Canva/Figma + AI image tools.</p>
+    </div>
+    <div class="proj-card">
+      <h3>2. AI-Powered Ad Campaign</h3>
+      <p>Plan &amp; simulate a Meta/Google ad campaign — audience research, AI-generated ad copy variants, mock budget &amp; performance report.</p>
+    </div>
+    <div class="proj-card">
+      <h3>3. Cold Outreach Sprint</h3>
+      <p>Build a 20-lead sales/CRM sequence with AI-drafted personalized emails; document response rate as a case study.</p>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">N</span>Networking Strategy</div>
+  <div class="net-box two-col">
+    <div class="col">
+      <p style="font-size:8.5pt; line-height:1.65;">• Post 2x/week on LinkedIn showcasing project breakdowns and learnings<br>
+      • Comment thoughtfully on 5 posts/day from marketing/design leaders<br>
+      • Join 2–3 niche communities (Slack/Discord/LinkedIn groups) in marketing &amp; AI</p>
+    </div>
+    <div class="col">
+      <p style="font-size:8.5pt; line-height:1.65;">• Reach out to 5 professionals/week for 15-min informational chats<br>
+      • Attend 1 local/virtual industry event or webinar per month<br>
+      • Ask for referrals once portfolio is ready (Month 4+)</p>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">M</span>Monthly Milestones</div>
+  <div class="milestone-row">
+    <div class="m-card"><div class="m-label">M1</div><p>AI + tool basics complete</p></div>
+    <div class="m-card"><div class="m-label">M2</div><p>Ads &amp; analytics skills live</p></div>
+    <div class="m-card"><div class="m-label">M3</div><p>CRM certified, outreach started</p></div>
+    <div class="m-card"><div class="m-label">M4</div><p>3 projects published</p></div>
+    <div class="m-card"><div class="m-label">M5</div><p>80+ applications sent</p></div>
+    <div class="m-card"><div class="m-label">M6</div><p>Offer secured</p></div>
+  </div>
+
+  <div class="actions">
+    <h2><span class="icon">!</span>Immediate Next Actions (This Week)</h2>
+    <ol>
+      <li>Set up LinkedIn profile headline + banner around "Marketing × Design × AI"</li>
+      <li>Start Google Digital Marketing certification (free, ~2 hrs today)</li>
+      <li>Pick Project 1 (Brand Launch Kit) and outline it in Canva/Figma</li>
+      <li>Follow 10 marketing/design professionals and engage with 3 posts</li>
+    </ol>
+  </div>
+
+  <div class="footer">Generated using Chain-of-Thought Reasoning</div>
+
+</body>
+</html>
